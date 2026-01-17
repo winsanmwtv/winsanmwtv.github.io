@@ -53,8 +53,8 @@ const Pathfinder = () => {
             setDataError("");
             try {
                 const [datasetRes, datanodesRes] = await Promise.all([
-                    fetch('https://tjt.winsanmwtv.me/api/dataset.json'),
-                    fetch('https://tjt.winsanmwtv.me/api/datanodes.json')
+                    fetch('https://winsanmwtv.github.io/tre-api/raw-data/routes/dataset.json'),
+                    fetch('https://winsanmwtv.github.io/tre-api/raw-data/routes/datanodes.json')
                 ]);
                 if (!datasetRes.ok || !datanodesRes.ok) throw new Error(`HTTP error!`);
 
@@ -225,7 +225,7 @@ const Pathfinder = () => {
         if (!destinationLocation) return setUiError("Invalid destination. Please select a valid station from the list.");
 
         const params = new URLSearchParams({ criteria: selectedTravelOption, origin: originLocation.key, dest: destinationLocation.key, source: "limaru.net" });
-        window.location.href = `https://tjt.winsanmwtv.me/mytripquery/?${params.toString()}`;
+        window.location.href = `https://winsanmwtv.github.io/tre-api/limaru-tripplanner/index.html?${params.toString()}`;
     };
   
     // --- Render Logic ---
