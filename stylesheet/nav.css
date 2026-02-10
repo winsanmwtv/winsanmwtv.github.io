@@ -58,3 +58,7 @@ nav ul li a {
     padding: 11px 16px;
     text-decoration: none;
 }
+
+nav ul li a:focus {
+    text-decoration: none;
+}
