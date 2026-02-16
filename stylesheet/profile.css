@@ -66,3 +66,23 @@ div.header a {
     text-decoration: none;
     color: darkcyan;
 }
+
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        order: 1;
+        text-align: center;
+    }
+
+    article {
+        order: 2;
+    }
+
+    aside section#profile_side p {
+        display: none;
+    }
+}
