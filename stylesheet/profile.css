@@ -45,3 +45,24 @@ article section div span.material-symbols-outlined {
     height: 48px;
     font-size: 48px;
 }
+
+article section h4 {
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+aside section {
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+div.header img {
+    width: 48px;
+    height: 48px;
+}
+
+div.header a {
+    text-decoration: none;
+    color: darkcyan;
+}
